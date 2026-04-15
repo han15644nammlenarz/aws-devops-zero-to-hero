@@ -7,5 +7,5 @@ def hello():
     return 'Hello, world!'
 
 if __name__ == '__main__':
-    app.run()
-
+    # Enable debug mode for local development and set host/port explicitly
+    app.run(host='0.0.0.0', port=5000, debug=True)
