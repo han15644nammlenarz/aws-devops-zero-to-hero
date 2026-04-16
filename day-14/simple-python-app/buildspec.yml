@@ -26,6 +26,8 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully!"
+      # Print the image digest for traceability
+      - docker inspect --format='{{index .RepoDigests 0}}' "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest" || true
       # Log out of Docker registry after build for security
       - docker logout "$DOCKER_REGISTRY_URL"
 artifacts:
