@@ -24,8 +24,9 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully!"
+      # Log out of Docker registry after build for security
+      - docker logout "$DOCKER_REGISTRY_URL"
 artifacts:
   files:
     - '**/*'
   base-directory: ../simple-python-app
-
