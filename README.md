@@ -12,8 +12,8 @@ AWS zero to hero repo for devops engineers to learn AWS in 30 Days. This repo in
 |-----|-------|--------|
 | 1 | Introduction to AWS | ✅ Done |
 | 2 | IAM | ✅ Done |
-| 3 | EC2 Instances | 🔄 In Progress |
-| 4 | AWS Networking (VPC) | ⬜ Pending |
+| 3 | EC2 Instances | ✅ Done |
+| 4 | AWS Networking (VPC) | 🔄 In Progress |
 | 5 | AWS Security | ⬜ Pending |
 | 6 | AWS Route 53 | ⬜ Pending |
 | 7 | Secure VPC Setup | ⬜ Pending |
@@ -33,6 +33,8 @@ You will explore IAM, which is used for managing access to AWS resources. You'll
 You'll dive into EC2, which provides virtual servers in the cloud. You'll learn how to launch EC2 instances, connect to them using SSH, and understand key concepts such as instance types, security groups, and key pairs.
 
 **Your First AWS Project**: Deploy a simple web application(such as jenkins) on the ec2 instance and access the application from outside AWS.
+
+> **Note:** I used a t2.micro instance (free tier) running Amazon Linux 2023 for this project. Remember to stop the instance when not in use to avoid charges.
 
 ## Day 4: AWS Networking (VPC)
 
@@ -55,10 +57,4 @@ This day emphasizes security best practices in AWS. You'll learn how to implemen
     Set up public and private subnets.
     Configure route tables and associate subnets.
 
-- Implement network security:
-    Set up network access control lists (ACLs) to control inbound and outbound traffic.
-    Configure security groups for EC2 instances to allow specific ports and protocols.
-
-- Provision EC2 instances:
-    Launch EC2 instances in both the public and private subnets.
-    Configure security groups 
+- Implement netw
